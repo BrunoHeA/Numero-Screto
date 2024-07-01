@@ -50,8 +50,8 @@ table {
 }
 
 body {
-  background-color: #070739;
-  color: #C327AB;
+  background-color: #153448;
+  color: #948979;
   font-family: "Playwrite NG Modern", cursive;
   min-height: 100vh;
   display: flex;
@@ -65,6 +65,17 @@ body h1 {
   font-size: 5rem;
   margin-bottom: 1rem;
 }
+body .btn-jogar {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  background-color: #948979;
+  border: 0;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+body h2 {
+  font-size: 3rem;
+}
 body h3 {
   font-size: 2rem;
   margin-top: 1.2rem;
@@ -74,7 +85,8 @@ body .mensagem {
   margin-top: 3rem;
 }
 body .mensagem .box {
-  border: 2px solid #C327AB;
+  border: 2px solid #948979;
+  border-radius: 1rem;
   display: inline-block;
   font-size: 5rem;
   padding: 1rem;
