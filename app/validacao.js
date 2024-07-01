@@ -2,8 +2,17 @@ function verificaSeChuteValido(chute) {
     const numero = parseInt(chute)
 
     if (chuteForInvalido(numero)) {
-        elementoChute.innerHTML += "<div>Não é um número válido<div>"
-        return
+        debugger
+        if (chute.toUpperCase() === "GAME OVER") {
+            document.body.innerHTML = `
+            <h2>GAME OVER</h2>
+            <button id="jogar-novamente" class="btn-jogar">Jogar Novamente</button>
+            `
+            document.body.style.backgroundColor = "black"
+        } else {
+            elementoChute.innerHTML += "<div>Não é um número válido<div>"
+            return
+        }
     }
     if (numeroMaiorOuMenorPermitido(numero)) {
         elementoChute.innerHTML += (`<div>O número deve estar entre ${menorValor} e ${maiorValor}<div>`)
@@ -20,6 +29,8 @@ function verificaSeChuteValido(chute) {
     } else {
         elementoChute.innerHTML += `<div>O número secreto é maior <i class="fa-solid fa-up-long"></i></div>`
     }
+
+    
 }
 
 function chuteForInvalido(numero) {

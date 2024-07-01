@@ -14,8 +14,6 @@ function onSpeak(e) {
     chute = e.results[0][0].transcript
     exibeChuteNaTela(chute)
     verificaSeChuteValido(chute)
-    // const numeroMostrado = document.querySelector(".box")
-    // numeroMostrado.innerHTML = e.results[0][0].transcript
 }
 
 function exibeChuteNaTela(chute) {
